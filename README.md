@@ -67,10 +67,8 @@ Server Seed — текущий хэш серверного сида
 
 Экспорт формирует файл вида:
 
-=== STAKE HISTORY LOG ===
 Stake | [дата] | Ставки: 153 | Client: ... | Server: ...
 Stake | [дата] | Ставки: 87 | Client: ... | Server: ...
-=========================
 
 Текущие общие счетчики:
 Всего ставок: 24531
@@ -164,10 +162,8 @@ Export
 
 The export file looks like:
 
-=== STAKE HISTORY LOG ===
 Stake | [date] | Bets: 153 | Client: ... | Server: ...
 Stake | [date] | Bets: 87 | Client: ... | Server: ...
-=========================
 
 Current totals:
 Total bets: 24531
