@@ -1,7 +1,9 @@
 🇷🇺 README (Russian)
 
 Название: Stake Fairness Panel
+
 Тип: Tampermonkey UserScript
+
 Назначение: Контроль и логирование Fairness-сидов на Stake.com
 
 Описание
@@ -98,7 +100,9 @@ Stake | [дата] | Ставки: 87 | Client: ... | Server: ...
 EN README (English)
 
 Name: Stake Fairness Panel
+
 Type: Tampermonkey UserScript
+
 Purpose: Fairness seed tracking and logging for Stake.com
 
 Description
