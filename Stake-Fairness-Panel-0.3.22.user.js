@@ -7,6 +7,8 @@
 // @match        https://stake.com/*
 // @run-at       document-end
 // @grant        none
+// @connect      127.0.0.1
+// @connect      localhost
 // ==/UserScript==
 
 (function () {
