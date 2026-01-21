@@ -2,7 +2,7 @@
 // @name         Stake Fairness Panel
 // @author       1114.dev
 // @namespace    https://tampermonkey.net/
-// @version      0.3.22
+// @version      0.3.24
 // @description  Stake Fireness Panel (Является пльзовательским скриптом, который сохраняет историю  смены сида, экспортирует историю, и позволяет сменить пару сидов)
 // @match        https://stake.com/*
 // @run-at       document-end
@@ -90,7 +90,7 @@
         return new Promise((resolve, reject) => {
             const start = Date.now();
             const timer = setInterval(() => {
-                const input = modal.querySelector('input[data-testid="roatateSeed"]');
+                const input = modal.querySelector('input[data-testid="new-client-seed-input"]');
                 if (input) { clearInterval(timer); resolve(); }
                 if (Date.now() - start > timeout) { clearInterval(timer); reject(); }
             }, 50);
@@ -101,7 +101,7 @@
         return new Promise((resolve, reject) => {
             const start = Date.now();
             const timer = setInterval(() => {
-                const form = modal.querySelector('input[data-testid="roatateSeed"]')?.closest('form');
+                const form = modal.querySelector('input[data-testid="new-client-seed-input"]')?.closest('form');
                 const button = form ? [...form.querySelectorAll('button')]
                     .find(b => b.textContent.trim() === 'Изменить' && !b.disabled) : null;
                 if (button) { clearInterval(timer); resolve(); }
@@ -116,7 +116,7 @@
     }
 
     function rotateSeed(modal) {
-        const input = modal.querySelector('input[data-testid="roatateSeed"]');
+        const input = modal.querySelector('input[data-testid="new-client-seed-input"]');
         const form = input?.closest('form');
         const submit = form?.querySelector('button[type="submit"]');
         if (submit) submit.click();
